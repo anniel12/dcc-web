@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+  margin: auto;
+  color: #323232;
+  text-align: center;
+}
+
+/* GRADIENT LINE ON TOP OF PAGE */
+#gradient {
+  height: 8px;
+  background-image: linear-gradient(to right, #ed1f24, #3853a4, #69bd45);
+}
+
+header img {
+  margin-top: 10px;
+}
+
+h1 {
+  background-image: linear-gradient(to right, #ed1f24, #3853a4, #69bd45);
+  background-color: #323232;
+  color: white;
+  padding: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+p {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* BREAKLINE ABOVE FOOTER */
+hr {
+  background-color: #f1f1f1;
+  height: 4px;
+  border: 0;
+  width: 100%;
+}
+
+/* CONTACT BUTTON LINK ON HOMEPAGE */
+#contactparagraph {
+  font-size: 26px;
+  line-height: 50px;
+}
+
+#contact {
+  background-color: #3853a4;
+  letter-spacing: 0.7px;
+  color: white;
+  font-size: 17px;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 12px 22px 12px 22px;
+  font-weight: 600;
+}
+
+#contact:hover {
+  border: 2px solid #3853a4;
+  background-color: white;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 2px 2px 0px lightgray;
+}
+
+/* DIRECTIONS + MAP IMAGES */
+.annex {
+  width: 60%;
+}
+
+.lottitles {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 25%;
+  font-size: 16px;
+}
+
+.lotpics {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.lot {
+  width: 25%;
+  height: 50%;
+}
+
+/* COMPANIES SECTION*/
+.companies {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.companies img {
+  max-width: 170px;
+  padding: 10px;
+}
+
+.companies img:hover {
+  animation: pop 0.3s linear 1;
+}
+
+/* SPEAKERS SECTION*/
+.speakers {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.speakers img {
+  max-width: 360px;
+  border-radius: 180px;
+  padding: 15px;
+}
+
+section {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+/* SPEAKERS CSS ANIMATIONS/OVERLAY TEXT */
+.speakerpic {
+  position: relative;
+  width: 100%;
+}
+
+.speakerpic a {
+  text-decoration: none;
+  color: #FA7268;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 375px;
+  opacity: 0;
+
+  max-width: 360px;
+  border-radius: 180px;
+}
+
+
+.speakerpic:hover .overlay {
+  opacity: .45;
+  transition: .5s ease;
+  background-color: white;
+  animation: pop 0.3s linear 1;
+}
+
+.text {
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* MAIN NAVIGATION */
+nav {
+  width: 50%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-size: 85%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #323232;
+  text-decoration: none;
+
+}
+
+nav a:hover {
+  background-color: #323232;
+  border-radius: 20px;
+  color: white;
+  transition:color 0.5s ease;
+}
+
+/* SOCIAL MEDIA LINKS IN CONTACT SECTION */
+a i {
+  color: #323232;
+  letter-spacing: 20px;
+}
+
+a i:hover {
+  animation: pop 0.3s linear 2;
+}
+
+/* FOOTER SECTION */
+footer {
+  padding: 20px;
+  font-size: 13px;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.1);}
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+}
