@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>UC Davis Design Careers Fair 2019</title>
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/dcflogo.png">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
@@ -15,27 +15,30 @@
 
     <div id="gradient"></div>
 
-    <header>
-      <a href="index.html"><img src="images/dcflogo2.png" height="70" width="70"></img></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="companies.html">COMPANIES</a></li>
-          <li><a href="speakers.html">SPEAKERS</a></li>
-          <li><a href="directions.html">DIRECTIONS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="outerheader">
+      <div class="blackheader">
+        <a href="index.html"><img src="images/dcflogo2.png" height="70" width="70" class="logo"></img></a>
 
-    <h1>Design Careers Fair</h1>
-    <h2>Annual Design Careers Fair 2019</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="companies.html">COMPANIES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="directions.html">DIRECTIONS</a></li>
+            <li><a href="contact.html" class="contact">CONTACT</a></li>
+          </ul>
+        </nav>
 
-    <img src="images/dcf.png" class="dcf"></img>
+      </div>
+    </div>
+
+    <div class="dcfbackground">
+      <img src="images/dcf.png" class="dcf"></img>
+    </div>
 
     <!--DESCRIPTION OF FAIR/CLUB-->
     <section>
-      <h2>ABOUT</h2>
+      <h2 class="about">ABOUT</h2>
 
       <p>
         The UC Davis Design Career Fair is an annual event aimed to provide students with career resources. We hope to inspire our designers to learn from different companies and guest speakers. The Design Career Fair ultimately wants to help students network with a variety of people and find job/internship opportunities.
@@ -48,14 +51,14 @@
 
     <!--SCHEDULE AND TIMES-->
     <section>
-      <h2>SCHEDULE</h2>
+      <h2 class="schedule">SCHEDULE</h2>
 
-      <p>May 3rd, 2019 Friday</p>
-      <p>10AM - 4PM</p>
+      <p>Friday, May 3rd, 2019</p>
+      <p>10:00 AM - 4:00 PM</p>
     </section>
 
 
-    <p id="contactparagraph">Have any questions or want to learn more?<br>
+    <p id="contactparagraph">Have questions or want to learn more?<br>
       <a href="contact.html" id="contact">CONTACT US</a>
     </p>
 
@@ -64,6 +67,8 @@
     <footer>
       <p>Copyright © 2019 UCD Design Careers Fair. All Rights Reserved.</p>
     </footer>
+
+    <!-- <script src="script.js"></script> -->
 
   </body>
 </html>
