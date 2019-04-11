@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Directions</title>
-    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/dcflogo.png">
@@ -14,44 +13,72 @@
 
     <div id="gradient"></div>
 
-    <header>
-      <a href="index.html"><img src="images/dcflogo2.png" height="70" width="70"></img></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="companies.html">COMPANIES</a></li>
-          <li><a href="speakers.html">SPEAKERS</a></li>
-          <li><a href="directions.html">DIRECTIONS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="outerheader">
+      <div class="blackheader">
+        <a href="index.html"><img src="images/dcflogo2.png" height="70" width="70" class="logo"></img></a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="companies.html">COMPANIES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="directions.html">DIRECTIONS</a></li>
+            <li><a href="contact.html" class="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
 
     <h1>DIRECTIONS</h1>
 
-    <section>
-      <p>The Design Career Fair will be held at the Art Annex.</p>
+    <div class="directioncontainer">
 
-      <p>Art Annex 107 (Main Room) will be used as the main stage for welcoming guest companies and UC Davis students.
-      Art Annex 112 (Seminar Room) will be hosting the speaker seminar where professors, alumni, and guest speakers will share their stories.</p>
-    </section>
+      <section class="directionspart1">
+        <p>The Design Careers Fair will be held at the <strong>Art Annex.</strong><br>
+          <strong>Address:</strong> Hutchison Dr, Davis, CA 95616
+        </p>
 
-    <img src="images/annex.png" class="annex"></img>
+        <p>Art Annex is located <strong>behind the UC Davis Art Building</strong> and to the left of the walkway towards Mrak Hall.</p>
 
-    <h1>Parking Lots</h1>
+        <p>Art Annex 107 (Main Room) will be used as the main stage for welcoming guest companies and UC Davis students.
+        Art Annex 112 (Seminar Room) will be hosting the speaker seminar where professors, alumni, and guest speakers will share their stories.</p>
+      </section>
 
-      <p>Visiting guests will be given a ONE-DAY visitors parking permit, allowing them to park in the C permit lots.</p>
+      <img src="images/annex.png" class="annex"></img>
 
-    <div class="lottitles">
-      <h2 class="title">North Entry Parking Structure (by Hickey Gym & near MU)</h2>
-      <h2 class="title">Visitor Parking Lot 5 (on Arboretum Dr & Old Davis Rd)</h2>
-      <h2 class="title">South Entry Parking Structure (next to the Manetti Shrem Museum)</h2>
-    </div>
+      <h2 class="parking">PARKING LOTS</h2>
 
-    <div class="lotpics">
-      <img src="images/lot1.png" class="lot"></img>
-      <img src="images/lot2.png" class="lot"></img>
-      <img src="images/lot3.png" class="lot"></img>
+      <section>
+        <p>Visiting guests will be given a ONE-DAY visitors parking permit, allowing them to park in the C permit lots.</p>
+      </section>
+
+      <section class="lotpics">
+        <div class="lotdiv">
+          <div><h2 class="lottitle">North Entry Parking Structure (by Hickey Gym & near MU)</h2></div>
+          <img src="images/lot1.png" class="lot"></img>
+        </div>
+        <div class="lotdiv">
+          <div><h2 class="lottitle">Visitor Parking Lot 5 (on Arboretum Dr & Old Davis Rd)</h2></div>
+          <img src="images/lot2.png" class="lot"></img>
+        </div>
+        <div class="lotdiv">
+          <div><h2 class="lottitle">South Entry Parking Structure (next to Manetti Shrem Museum)</h2></div>
+          <img src="images/lot3.png" class="lot"></img>
+        </div>
+      </section>
+
+      <h2 class="routes">ROUTES</h2>
+
+      <section class="route">
+        <p>Take route <strong>I-80 E</strong> from San Francisco and route <strong>I-80 W</strong> from Sacramento.</p>
+      </section>
+
+      <div class="routepicscontainer">
+        <div class="routediv"><img src="images/sf.png" class="routepics"></img></div>
+        <div class="routediv"><img src="images/sac.png" class="routepics"></img></div>
+      </div>
+
     </div>
 
     <hr>

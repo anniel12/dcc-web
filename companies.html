@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Companies</title>
-    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/dcflogo.png">
@@ -14,65 +13,162 @@
 
     <div id="gradient"></div>
 
-    <header>
-      <a href="index.html"><img src="images/dcflogo2.png" height="70" width="70"></img></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="companies.html">COMPANIES</a></li>
-          <li><a href="speakers.html">SPEAKERS</a></li>
-          <li><a href="directions.html">DIRECTIONS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="outerheader">
+      <div class="blackheader">
+        <a href="index.html"><img src="images/dcflogo2.png" height="70" width="70" class="logo"></img></a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="companies.html">COMPANIES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="directions.html">DIRECTIONS</a></li>
+            <li><a href="contact.html" class="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
 
     <h1>COMPANIES</h1>
 
     <section class="companies">
-      <a href="https://arts.ucdavis.edu/club/asid"><img src="companies/asid.png"></img></a>
-      <a href="http://sqpeg.com/"><img src="companies/sqpeg.png"></img></a>
-      <a href="https://www.urban57.com/"><img src="companies/urban.png"></img></a>
-      <a href="https://inkmonkeygraphics.com/"><img src="companies/ink2.png"></img></a>
-      <a href="http://www.boogiemanmarketing.com/"><img src="companies/boogie.png"></img></a>
-      <a href="https://www.oracle.com/index.html"><img src="companies/oracle.png"></img></a>
-      <a href="https://designalchemyltd.com/"><img src="companies/alchemy2.png"></img></a>
-      <a href="https://aggiereuse.ucdavis.edu/"><img src="companies/aggie.png"></img></a>
-      <a href="https://savagebureau.com/"><img src="companies/savage.png"></img></a>
-      <a href="http://www.thecyclenewshour.com/"><img src="companies/cycle.png"></img></a>
-      <a href="https://www.tableau.com/"><img src="companies/tableau.png"></img></a>
-      <a href="https://aggiestudios.ucdavis.edu/"><img src="companies/studios.png"></img></a>
-      <a href="https://www.clickspring.com/"><img src="companies/click.jpg"></img></a>
-      <a href="https://www.kollabsf.org/"><img src="companies/kolla.png"></img></a>
-      <a href="https://manettishremmuseum.ucdavis.edu/"><img src="companies/shrem.png"></img></a>
-      <a href="https://samc.ucdavis.edu/"><img src="companies/davis.png"></img></a>
-      <a href="https://www.facebook.com/pixelofdavis/"><img src="companies/pxl.png"></img></a>
-      <a href="https://www.symsoftsolutions.com/"><img src="companies/sym.png"></img></a>
-      <a href="https://spoonuniversity.com/chapter/ucd"><img src="companies/spoon.png"></img></a>
-      <a href="http://www.morsecustomhomes.com/"><img src="companies/morse.jpeg"></img></a>
-      <a href="https://www.bridgegood.com/"><img src="companies/bg.png"></img></a>
 
-      Associated Students of Interior Design/ASID
-      Square Peg Design
-      Urban 57 Home Decor & Design
-      Ink Monkey, LLC
-      Boogieman Marketing
-      Oracle
-      Design Alchemy
-      Aggie Reuse Store
-      The Savage Bureau
-      Cycle News Hour
-      Tableau
-      Aggie Studios
-      ClickSpring
-      Kollaboration
-      Manetti Shrem Museum
-      UC Davis Student Affairs Marketing and Communications
-      PIXEL Graphic Design Club
-      SymSoft Solutions
-      Spoon University at UC Davis
-      Morse Custom Homes and Remodeling
-      BRIDGEGOOD
+      <div class="companycontainer">
+        <a href="https://www.cisco.com/"><img src="companies/cisco.gif"></img></a>
+        <div class="caption">Cisco Systems</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="http://sqpeg.com/"><img src="companies/sqpeg.png"></img></a>
+        <div class="caption">Square Peg Design</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.clickspring.com/"><img src="companies/click.jpg"></img></a>
+        <div class="caption">ClickSpring</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="http://www.boogiemanmarketing.com/"><img src="companies/boogie.png"></img></a>
+        <div class="caption">Boogieman<br> Marketing</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.sephora.com/"><img src="companies/sephora.jpg"></img></a>
+        <div class="caption">Sephora</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://spoonuniversity.com/chapter/ucd"><img src="companies/spoon.png"></img></a>
+        <div class="caption">Spoon University<br>
+          at UC Davis</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://designalchemyltd.com/"><img src="companies/alchemy2.png"></img></a>
+        <div class="caption">Design Alchemy</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://aggiereuse.ucdavis.edu/"><img src="companies/aggie.png"></img></a>
+        <div class="caption">Aggie Reuse Store</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://savagebureau.com/"><img src="companies/savage.png"></img></a>
+        <div class="caption">The Savage Bureau</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="http://www.thecyclenewshour.com/"><img src="companies/cycle.png"></img></a>
+        <div class="caption">Cycle News Hour</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://samc.ucdavis.edu/"><img src="companies/davis.png"></img></a>
+        <div class="caption">UC Davis Student<br>
+          Affairs Marketing<br> and Communications</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.oracle.com/index.html"><img src="companies/oracle.png"></img></a>
+        <div class="caption">Oracle</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.urban57.com/"><img src="companies/urban.png"></img></a>
+        <div class="caption">Urban 57 Home<br> Decor & Design</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.kollabsf.org/"><img src="companies/kolla.png"></img></a>
+        <div class="caption">Kollaboration</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://manettishremmuseum.ucdavis.edu/"><img src="companies/shrem.png"></img></a>
+        <div class="caption">Manetti Shrem<br> Museum</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.tableau.com/"><img src="companies/tableau.png"></img></a>
+        <div class="caption">Tableau</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.facebook.com/pixelofdavis/"><img src="companies/pxl.png"></img></a>
+        <div class="caption">PIXEL Graphic<br> Design Club</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.bridgegood.com/"><img src="companies/bg.png"></img></a>
+        <div class="caption">BRIDGEGOOD</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.symsoftsolutions.com/"><img src="companies/sym.png"></img></a>
+        <div class="caption">SymSoft Solutions</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://aggiestudios.ucdavis.edu/"><img src="companies/studios.jpg"></img></a>
+        <div class="caption">Aggie Studios</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="http://www.morsecustomhomes.com/"><img src="companies/morse.jpeg"></img></a>
+        <div class="caption">Morse Custom Homes<br> and Remodeling</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://arts.ucdavis.edu/club/asid"><img src="companies/asid.png"></img></a>
+        <div class="caption">Associated Students<br>
+          of Interior Design</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.hirambanks.com/"><img src="companies/hiram.jpeg"></img></a>
+        <div class="caption">Hiram Banks<br>
+          Lighting Design</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://inkmonkeygraphics.com/"><img src="companies/ink.jpg"></img></a>
+        <div class="caption">Ink Monkey, LLC</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="https://www.corporationwiki.com/p/2f7v99/bondswell-inc"><img src="companies/bondswell.png"></img></a>
+        <div class="caption">BondsWell, Inc.<br>
+          and Remodeling</div>
+      </div>
+
+      <div class="companycontainer">
+        <a href="http://rwarddesign.com/"><img src="companies/rebecca.jpg"></img></a>
+        <div class="caption">Rebecca Ward<br> Design</div>
+      </div>
+
     </section>
 
     <hr>
