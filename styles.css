@@ -7,29 +7,92 @@ body {
   margin: auto;
   color: #323232;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 /* GRADIENT LINE ON TOP OF PAGE */
 #gradient {
-  height: 8px;
-  background-image: linear-gradient(to right, #ed1f24, #3853a4, #69bd45);
+  height: 9px;
+  background-image: linear-gradient(to right, #ea212d, #3a55a2, #6cbb4c);
+  overflow: hidden;
 }
 
-header img {
-  margin-top: 10px;
+.outerheader {
+  background-color: black;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.blackheader {
+  width: 89%;
+  margin: auto;
+  background-color: black;
+  height: 70px;
+}
+
+.logo {
+  float: left;
+}
+
+.dcfbackground {
+  width: 100%;
+  background-color: black;
+}
+
+.dcf {
+  margin-bottom: 0px;
 }
 
 h1 {
-  background-image: linear-gradient(to right, #ed1f24, #3853a4, #69bd45);
-  background-color: #323232;
-  color: white;
+  color: #323232;
   padding: 15px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  clear: both;
+}
+
+h1:before,
+h1:after {
+ background-color: lightgrey;
+ content: "";
+ display: inline-block;
+ height: 2px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+ box-shadow: 0 1px 1px 0 lightgrey;
+}
+
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 700;
+}
+
+section {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+.about {
+  border-bottom: 7px solid #ea212d;
+  width: 73px;
+  padding-bottom: 3px;
+}
+
+.schedule {
+  border-bottom: 7px solid #6cbb4c;
+  width: 113px;
+  padding-bottom: 3px;
 }
 
 p {
@@ -44,10 +107,11 @@ img {
 
 /* BREAKLINE ABOVE FOOTER */
 hr {
-  background-color: #f1f1f1;
-  height: 4px;
+  background-color: lightgrey;
+  height: 2px;
   border: 0;
-  width: 100%;
+  margin-bottom: 0px;
+  box-shadow: 0 1px 1px 0 lightgrey;
 }
 
 /* CONTACT BUTTON LINK ON HOMEPAGE */
@@ -57,7 +121,7 @@ hr {
 }
 
 #contact {
-  background-color: #3853a4;
+  background-color: #3a55a2;
   letter-spacing: 0.7px;
   color: white;
   font-size: 17px;
@@ -68,7 +132,7 @@ hr {
 }
 
 #contact:hover {
-  border: 2px solid #3853a4;
+  border: 2px solid #3a55a2;
   background-color: white;
   color: black;
   padding: 10px 20px 10px 20px;
@@ -76,73 +140,156 @@ hr {
 }
 
 /* DIRECTIONS + MAP IMAGES */
+.directioncontainer {
+  padding-bottom: 20px;
+}
+
+.directionspart1 {
+  width: 70%;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+}
+
 .annex {
-  width: 60%;
+  width: 70%;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
 }
 
-.lottitles {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.title {
-  width: 25%;
+.lottitle {
+  width: 260px;
   font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .lotpics {
   margin: auto;
-  width: 80%;
+  width: 70%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
+  text-align: center
 }
 
 .lot {
-  width: 25%;
-  height: 50%;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+  margin: 10px;
+}
+
+.parking {
+  border-bottom: 7px solid #69bd45;
+  padding-bottom: 3px;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+.routes {
+  padding-top: 40px;
+  border-bottom: 7px solid #3a55a2;
+  padding-bottom: 3px;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+.route {
+  text-align: center;
+}
+
+.routepicscontainer {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.routepics {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+  margin: 10px;
 }
 
 /* COMPANIES SECTION*/
 .companies {
-  width: 75%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+}
+
+.companycontainer {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
 }
 
 .companies img {
-  max-width: 170px;
-  padding: 10px;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 35px;
+  padding-bottom: 10px;
 }
+
 
 .companies img:hover {
   animation: pop 0.3s linear 1;
 }
 
 /* SPEAKERS SECTION*/
+
 .speakers {
-  width: 75%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+}
+
+.speakercontainer {
+  margin-top: 30px;
 }
 
 .speakers img {
-  max-width: 360px;
-  max-height: 360px;
+  max-width: 300px;
   border-radius: 180px;
   padding: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+  background-color: white;
 }
 
-section {
-  width: 60%;
-  margin: auto;
-  text-align: left;
+.speakercaption {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 /* SPEAKERS CSS ANIMATIONS/OVERLAY TEXT */
@@ -164,15 +311,14 @@ section {
   right: 0;
   width: 375px;
   opacity: 0;
-
-  max-width: 360px;
+  max-width: 300px;
   border-radius: 180px;
+  margin-bottom: 3px;
 }
 
-
 .speakerpic:hover .overlay {
-  opacity: .45;
-  transition: .5s ease;
+  opacity: .55;
+  transition: .4s ease;
   background-color: white;
   animation: pop 0.3s linear 1;
 }
@@ -193,27 +339,24 @@ section {
 
 /* MAIN NAVIGATION */
 nav {
-  width: 50%;
-  margin: auto;
+  float: right;
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
-  padding-left: 0px;
   justify-content: space-around;
 }
 
 nav ul li a {
-  padding: 10px;
+  padding: 10px 17px 10px 17px;
   display: block;
   text-align: center;
   font-size: 85%;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #323232;
+  letter-spacing: 1px;
+  color: lightgrey;
   text-decoration: none;
-
 }
 
 nav a:hover {
@@ -224,18 +367,76 @@ nav a:hover {
 }
 
 /* SOCIAL MEDIA LINKS IN CONTACT SECTION */
+.contactsection {
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px 0 lightgrey;
+    margin-bottom: 30px;
+}
+
+.socialcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 30%;
+  margin: auto;
+}
+
+.contactlinks {
+  color: #004f9f;
+  font-weight: 600;
+}
+
+.contactlinks:hover {
+  color: darkblue;
+}
+
 a i {
-  color: #323232;
-  letter-spacing: 20px;
+  color: white;
+  padding: 25px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  background-color: #1da1f2;
+}
+
+.ig i {
+  background-color: #3f729b;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+.fb i {
+  background-color: #3b5998;
+  padding-right: 37px;
+  padding-left: 37px;
+}
+
+.linkedin i {
+  background-color: #0077B5;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+.mail i {
+  background-color: #004f9f;
 }
 
 a i:hover {
-  animation: pop 0.3s linear 2;
+  animation: pop 0.3s linear 1;
 }
 
 /* FOOTER SECTION */
 footer {
   padding: 20px;
+  font-family: helvetica;
+  letter-spacing: 0.3px;
+}
+
+footer p {
   font-size: 13px;
 }
 
@@ -244,9 +445,76 @@ footer {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 500px) {
-  nav ul {
-    flex-direction: column;
+@media screen and (max-width: 709px) {
+    .lotpics {
+      justify-content: center;
+    }
+    .routepicscontainer {
+      justify-content: center;
+    }
+}
+
+@media screen and (max-width: 633px) {
+  .blackheader {
+    background-color: black;
+    padding-bottom: 172px;
   }
 
+}
+
+@media screen and (max-width: 688px) {
+  .blackheader {
+    background-color: black;
+    padding-bottom: 137px;
+  }
+
+  nav ul {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .blackheader {
+    background-color: black;
+    padding-bottom: 172px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  .companies {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 272px) {
+  .blackheader {
+    background-color: black;
+    padding-bottom: 207px;
+  }
+
+}
+
+@media screen and (max-width: 203px) {
+  .blackheader {
+    background-color: black;
+    padding-bottom: 242px;
+  }
+}
+
+@media screen and (max-width: 174px) {
+  .blackheader {
+    background-color: black;
+    padding-bottom: 277px;
+  }
 }
