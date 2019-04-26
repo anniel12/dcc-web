@@ -7,7 +7,7 @@ body {
   margin: auto;
   color: #323232;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #F7F9FA;
 }
 
 /* GRADIENT LINE ON TOP OF PAGE */
@@ -45,6 +45,7 @@ body {
 }
 
 h1 {
+  font-size: 40px;
   color: #323232;
   padding: 15px;
   font-weight: 700;
@@ -107,7 +108,7 @@ img {
 
 /* BREAKLINE ABOVE FOOTER */
 hr {
-  background-color: lightgrey;
+  background-color: #D7DAE0;
   height: 2px;
   border: 0;
   margin-bottom: 0px;
@@ -180,28 +181,25 @@ hr {
   width: 260px;
   border-radius: 15px;
   box-shadow: 0 2px 8px 0 lightgrey;
-  margin: 10px;
+}
+
+.lotsection {
+  width: 70%;
 }
 
 .parking {
   border-bottom: 7px solid #69bd45;
   padding-bottom: 3px;
-  width: 70%;
-  margin: auto;
   letter-spacing: 1px;
+  width: 165px;
 }
 
 .routes {
   padding-top: 40px;
   border-bottom: 7px solid #3a55a2;
   padding-bottom: 3px;
-  width: 70%;
-  margin: auto;
+  width: 92px;
   letter-spacing: 1px;
-}
-
-.route {
-  text-align: center;
 }
 
 .routepicscontainer {
@@ -209,18 +207,18 @@ hr {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .routepics {
   width: 400px;
   border-radius: 15px;
   box-shadow: 0 2px 8px 0 lightgrey;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
 /* COMPANIES SECTION*/
-.companies {
+.companies, .sponsors {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -252,15 +250,20 @@ hr {
   padding-bottom: 10px;
 }
 
+.sponsors img {
+  max-width: 250px;
+  max-height: 250px;
+  padding: 35px;
+  padding-bottom: 10px;
+}
 
-.companies img:hover {
+.companies img:hover, .sponsors img:hover {
   animation: pop 0.3s linear 1;
 }
 
 /* SPEAKERS SECTION*/
-
-.speakers {
-  width: 70%;
+.speakercontainer {
+  width: 78%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -271,26 +274,30 @@ hr {
   box-shadow: 0 2px 8px 0 lightgrey;
 }
 
-.speakercontainer {
+.speakers {
   margin-top: 30px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .speakers img {
-  max-width: 300px;
-  border-radius: 180px;
+  max-width: 80%;
+  height: auto;
   padding: 15px;
   box-shadow: 0 2px 8px 0 lightgrey;
   background-color: white;
+  border-radius: 200px;
 }
 
 .speakercaption {
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
 
 /* SPEAKERS CSS ANIMATIONS/OVERLAY TEXT */
 .speakerpic {
@@ -304,15 +311,15 @@ hr {
 }
 
 .overlay {
+  margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 375px;
   opacity: 0;
-  max-width: 300px;
-  border-radius: 180px;
+  max-width: 80%;
+  border-radius: 200px;
   margin-bottom: 3px;
 }
 
@@ -334,9 +341,44 @@ hr {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
+
+.row1 {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+}
+
+/* PORTFOLIO IMAGES */
+.pic {
+  padding: 8px;
+  border: 1px solid #d6daef;
+  background-color: #f2f6f8;
+  width: 70%;
+  box-shadow: 4px 4px 4px darkgrey;
+  opacity: 0.85;
+  border-radius: 200px;
+}
+
+.pic:hover{
+  animation: pop 0.3s linear 1;
+  opacity: 1;
+}
+
+.row1 div:last-of-type img{
+  margin-right: 0px;
+}
+
+.row2 div:last-of-type img{
+  margin-right: 0px;
+}
 /* MAIN NAVIGATION */
 nav {
   float: right;
@@ -433,7 +475,7 @@ a i:hover {
 footer {
   padding: 20px;
   font-family: helvetica;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 footer p {
