@@ -51,6 +51,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 1px;
   clear: both;
+  overflow: hidden;
 }
 
 h1:before,
@@ -78,6 +79,7 @@ h2 {
   font-weight: 700;
 }
 
+
 section {
   width: 60%;
   margin: auto;
@@ -87,12 +89,6 @@ section {
 .about {
   border-bottom: 7px solid #ea212d;
   width: 73px;
-  padding-bottom: 3px;
-}
-
-.schedule {
-  border-bottom: 7px solid #6cbb4c;
-  width: 113px;
   padding-bottom: 3px;
 }
 
@@ -108,6 +104,7 @@ img {
 
 /* BREAKLINE ABOVE FOOTER */
 hr {
+  clear: both;
   background-color: #D7DAE0;
   height: 2px;
   border: 0;
@@ -230,6 +227,18 @@ hr {
   box-shadow: 0 2px 8px 0 lightgrey;
 }
 
+.sponsors {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 lightgrey;
+}
+
 .companycontainer {
   padding-right: 20px;
   padding-left: 20px;
@@ -265,17 +274,30 @@ hr {
   padding-bottom: 35px;
 }
 
-/* SPEAKERS SECTION*/
+/* SPEAKERS SECTION */
+.allspeakers {
+  margin: auto;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 0 2px 8px 0 lightgrey;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  float: left;
+  width: 25%;
+  margin-left: 20px;
+}
+
 .speakercontainer {
+  float: right;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
   margin-bottom: 30px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px 0 lightgrey;
+  margin-right: 20px;
 }
 
 .speakers {
@@ -285,7 +307,7 @@ hr {
 }
 
 .speakers img {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
   padding: 15px;
   box-shadow: 0 2px 8px 0 lightgrey;
@@ -322,7 +344,7 @@ hr {
   left: 0;
   right: 0;
   opacity: 0;
-  max-width: 80%;
+  max-width: 70%;
   border-radius: 200px;
   margin-bottom: 3px;
 }
@@ -337,7 +359,7 @@ hr {
 .text {
   color: black;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.5em;
   letter-spacing: 1px;
   position: absolute;
   top: 50%;
@@ -347,42 +369,38 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+/* SPEAKERS SCHEDULE */
+.schedule {
+  border-bottom: 7px solid #6cbb4c;
+  width: 113px;
+  padding-bottom: 3px;
+}
 
-.row1 {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.time {
+  font-size: 18px;
+}
+
+.schedulecontainer {
+  width: 70%;
   margin: auto;
-  margin-bottom: 30px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 8px 0 lightgrey;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-/* PORTFOLIO IMAGES */
-.pic {
-  padding: 8px;
-  border: 1px solid #d6daef;
-  background-color: #f2f6f8;
-  width: 70%;
-  box-shadow: 4px 4px 4px darkgrey;
-  opacity: 0.85;
-  border-radius: 200px;
+.schedulesection {
+  line-height: 24px;
 }
 
-.pic:hover{
-  animation: pop 0.3s linear 1;
-  opacity: 1;
+.specifictime {
+  text-align: left;
+  width: 25%;
+  margin: auto;
 }
 
-.row1 div:last-of-type img{
-  margin-right: 0px;
-}
-
-.row2 div:last-of-type img{
-  margin-right: 0px;
-}
 /* MAIN NAVIGATION */
 nav {
   float: right;
@@ -491,6 +509,13 @@ footer p {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 799px) {
+  .speakercontainer {
+    width: 65%;
+  }
+
+}
+
 @media screen and (max-width: 709px) {
     .lotpics {
       justify-content: center;
@@ -516,7 +541,9 @@ footer p {
 
   nav ul {
     margin: auto;
+    margin-right: 40px;
   }
+
 }
 
 @media screen and (max-width: 633px) {
