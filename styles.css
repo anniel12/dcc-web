@@ -137,6 +137,30 @@ hr {
   box-shadow: 0px 2px 2px 0px lightgray;
 }
 
+#pictureparagraph {
+  font-size: 26px;
+  line-height: 50px;
+}
+
+#picture {
+  background-color: #3a55a2;
+  letter-spacing: 0.7px;
+  color: white;
+  font-size: 17px;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 12px 22px 12px 22px;
+  font-weight: 600;
+}
+
+#picture:hover {
+  border: 2px solid #3a55a2;
+  background-color: white;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 2px 2px 0px lightgray;
+}
+
 /* DIRECTIONS + MAP IMAGES */
 .directioncontainer {
   padding-bottom: 20px;
